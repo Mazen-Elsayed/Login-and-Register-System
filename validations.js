@@ -22,12 +22,6 @@ function validateLab4RegisterForm() {
         return false;
     }
 
-    if (password.includes(' ')) {
-        alert("Password cannot contain spaces");
-        document.getElementById("password").focus();
-        return false;
-    }
-
     if (confirmPassword.length === 0) {
         alert("Confirm password cannot be empty");
         document.getElementById("confirmPassword").focus();
